@@ -1,9 +1,9 @@
 import * as bcrypt from 'bcryptjs';
-import { User } from './entity/User';
+import { User } from '../../entity/User';
 
 export const resolvers = {
 	Query: {
-		hello: (_, { name }) => `bye ${name || 'World'}`
+		blah: () => 'blah'
 	},
 	Mutation: {
 		register: async (_, { email, password }) => {

@@ -3,5 +3,5 @@
 node_modules/
 build/
 tmp/
-temp/
+# temp/
 package-lock.json
