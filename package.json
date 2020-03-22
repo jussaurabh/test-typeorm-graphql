@@ -21,21 +21,15 @@
 		"typeorm": "0.2.24"
 	},
 	"scripts": {
-		"start": "nodemon --exec ts-node src/index.ts",
-		"test": "jest"
+		"server": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+		"test-server": "NODE_ENV=test ts-node src/index.ts",
+		"test": "NODE_ENV=test jest"
 	},
 	"jest": {
 		"transform": {
 			"^.+\\.tsx?$": "ts-jest"
 		},
 		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-		"moduleFileExtensions": [
-			"ts",
-			"tsx",
-			"js",
-			"jsx",
-			"json",
-			"node"
-		]
+		"moduleFileExtensions": [ "ts", "tsx", "js", "jsx", "json", "node" ]
 	}
 }

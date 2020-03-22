@@ -1,5 +1,9 @@
 import { request } from 'graphql-request';
-import { createConnection } from 'typeorm';
+import { createTypeormConnection } from '../utils/createTypeormConnection';
+
+beforeAll(async () => {
+	await createTypeormConnection();
+});
 
 const email = 'bob@mail.com';
 const password = 'bob';
