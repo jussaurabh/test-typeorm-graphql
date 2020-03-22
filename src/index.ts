@@ -1,3 +1,5 @@
+// test-typeorm-graphql Basic Setup
+
 import 'reflect-metadata';
 
 import { GraphQLServer } from 'graphql-yoga';
